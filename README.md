@@ -18,24 +18,23 @@ This assignment did use a lot of code that was covered in class, I just referred
 
 - For my linear regression models I took the code I generated during the last assignment (Module 5) and created a function around it.
 
-    '''
-    def regression(x_value, y_value, x_label, y_label, title):
-    
-    (slope, intercept, rvalue, pvalue, stderr) = linregress(x_value, y_value)
-    regress_values = x_value * slope + intercept
-    line_eq = f"y = {str(round(slope,2))} x + {str(round(intercept,2))}"
-    
-    plt.scatter(x_value, y_value)
-    plt.plot(x_value, regress_values, "r-")
-        
-    
-    plt.xlabel(x_label)
-    plt.ylabel(y_label)
-    plt.title(title)
 
-    print(f"The r-value is: {round(rvalue,2)}")
-    print(f"The linear regression model formula is: {line_eq}")
-    '''
+      '''
+          def regression(x_value, y_value, x_label, y_label, title):
+          (slope, intercept, rvalue, pvalue, stderr) = linregress(x_value, y_value)
+          regress_values = x_value * slope + intercept
+          line_eq = f"y = {str(round(slope,2))} x + {str(round(intercept,2))}"
+    
+          plt.scatter(x_value, y_value)
+          plt.plot(x_value, regress_values, "r-")
+        
+         plt.xlabel(x_label)
+         plt.ylabel(y_label)
+         plt.title(title)
+
+         print(f"The r-value is: {round(rvalue,2)}")
+         print(f"The linear regression model formula is: {line_eq}")
+      '''
 
 ### VacationPy
 
@@ -44,13 +43,13 @@ This assignment did use a lot of code that was covered in class, I just referred
 https://discourse.holoviz.org/t/add-an-extra-field-when-hovering-in-hvplot-scatter/2331
 
     '''
-    hover_cols=["City", "Country"]
+        hover_cols=["City", "Country"]
     '''
 - I could not remember how to add a blank column to my dataframe, so I just did a search rather than trying to go through two month's worth of notes
 
 https://www.geeksforgeeks.org/how-to-add-empty-column-to-dataframe-in-pandas/#
     
     '''
-    hotel_df["Hotel Name"] = ""
+        hotel_df["Hotel Name"] = ""
     '''
 
